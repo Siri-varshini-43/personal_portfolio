@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+    sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background-color: rgba(0, 0, 0, 0.812);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    transition: ease 0.3;
+    font-weight: 500;
+}
+.logo:hover{
+    color: #d88ae6;
+    text-shadow: 0 0 25px #d88ae6,
+                 0 0 50px #d88ae6;
+    transform: scale(1.1);
+}
+span{
+    color: #d88ae6;
+}
+.navbar a{
+    color: white;
+    font-weight: 200;
+    margin: 0 23px;
+    transition: ease 0.5;
+}
+.navbar a:hover{
+    color: #d88ae6;
+    text-shadow: 0 0 25px #d88ae6;
+    border-bottom: 3px solid #d88ae6;
+    padding-bottom: 5px; 
+}
+.active{
+    color: #d88ae6;
+    text-shadow: 0 0 25px #d88ae6;
+    border-bottom: 3px solid #d88ae6;
+    padding-bottom: 5px;
+}
+.contact{
+    background-color: aliceblue;
+    font-weight: 200;
+    color: black;
+    padding: 10px 28px;
+    transition: ease 0.5;
+    border-radius: 10px;
+}
+.contact:hover{
+    background-color: #d88ae6;
+    color: white;
+    transform: scale(1.1);
+    text-shadow: 0 0 25px #d88ae6,
+                 0 0 50px #d88ae6;
+}
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(197, 179, 193, 0.732);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 12%;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    max-width: 1200px;
+}
+
+.content h3 {
+    font-size: 42px;
+}
+
+.content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.content h2 {
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 500px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #d88ae6;
+}
+::-webkit-scrollbar-track{
+    background-color: grey;
+}
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(197, 179, 193, 0.732);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 12%;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    max-width: 1000px;
+}
+
+.image1 img {
+    border: 2px solid black;
+    border-radius: 20%;
+    height: 500px;
+}
+
+.content1 {
+    max-width: 500px;
+}
+
+.content1 h1 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.content1 p {
+    font-size: 18px;
+    margin: 20px 0 30px;
+    line-height: 1.5;
+}
+
+.myclass {
+    display: flex;
+    justify-content: center; /* Centers items */
+    gap: 50px; /* Adjust spacing between links */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    width: 100%; /* Ensures full width */
+    max-width: 400px; /* Adjust to control spacing */
+    margin: auto; /* Centers the container */
+}
+
+.myclass a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.myclass a:hover {
+    color: #d88ae6;
+    text-shadow: 0 0 10px #d88ae6;
+    border-bottom: 3px solid #d88ae6;
+    padding-bottom: 5px;
+}
+
+.project {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(197, 179, 193, 0.732);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em; 
+    padding: 55px 12% 0; 
+}
+.project h1 {
+    font-size: 62px;
+    margin-bottom: 1em; 
+    text-align: center;
+}
+.outer {
+    display: inline-flex;
+    flex-wrap: wrap; 
+    gap: 1em; /* Adds space between individual projects */
+    justify-content: center; /* Centers projects horizontally */
+}
+.outer div {
+    border: 2px solid black; /* Defines project borders */
+    border-radius: 15px; /* Adjusted border radius for softer corners */
+    padding: 20px; /* Adds inner padding within each project */
+    transition: transform 0.5s ease;
+    width: 350px; /* Sets a consistent width for projects */
+    height: auto; /* Adjust height to fit content dynamically */
+    display: flex;
+    flex-direction: column; /* Stacks image and text vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center;
+    gap: 10px; /* Adds space between the image and text */
+}
+.outer div img {  
+    border-radius: 10px; /* Optional: Adds rounded corners to images */
+}
+.outer div p {
+    font-size: 16px; /* Adjusts text size */
+    color: #333; /* Sets text color */
+    margin: 0; /* Removes default margins */
+}
+.outer div:hover {
+    transform: scale(1.05); 
+    border-color: #444; 
+    background-color: rgba(0, 0, 0, 0.421);
+}
+.outer div:hover::before {
+    opacity: 0.5; /* Makes the overlay visible on hover */
+}
+.contact1 {
+    background-color: rgba(197, 179, 193, 0.732); /* Grey background */
+    padding: 50px 20px; /* Adds padding around the section */
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    align-items: center; /* Centers the form vertically */
+    min-height: 100vh; /* Ensures the section takes full height */
+}
+
+form {
+    background-color: #fff; /* White background for the form */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the form */
+    width: 100%;
+    max-width: 500px; /* Limit form width */
+}
+
+form h2 {
+    font-size: 32px;
+    text-align: center; /* Centers the heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+form input, form textarea {
+    width: 100%; /* Ensures input fields take full width */
+    padding: 12px; /* Adds padding inside text boxes */
+    margin: 10px 0; /* Adds space between text boxes */
+    border: 2px solid #ccc; /* Light border around the inputs */
+    border-radius: 5px; /* Rounded corners for text boxes */
+    font-size: 16px; /* Adjusts font size inside text boxes */
+    box-sizing: border-box; /* Ensures padding does not affect the overall width */
+}
+
+form button.bt-10 {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.736); 
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 18px; /* Button font size */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+form button.bt-10:hover {
+    background-color: #d88ae6; 
+    color: white;
+    transform: scale(1.1);
+    font-weight: 600;
+}
+footer.foot {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+footer .social a {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+footer .social a:hover {
+    transform: scale(1.2);
+    color: #d88ae6; /* Change hover color */
+}
+
+footer .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .list1 {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .list1 li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+footer .list1 li a:hover {
+    color: #d88ae6; /* Change hover color */
+    text-decoration: underline;
+    padding-bottom: 3px;
+}
+
+footer .copy-right {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+}
