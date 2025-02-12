@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Smooth scrolling for all navbar links except Resume
     document.querySelectorAll(".navbar a").forEach(link => {
         link.addEventListener("click", function (event) {
-            const targetId = this.getAttribute("href").substring(1); // Remove '#'
+            const targetId = this.getAttribute("href").substring(1);
 
             if (targetId === "resume") {
                 return; // Do nothing, let the browser handle the download
