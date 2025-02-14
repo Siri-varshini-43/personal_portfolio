@@ -1,88 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education & Certifications</title>
-    <link rel="stylesheet" href="education.css">
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scrolling for all navbar links except Resume
+    document.querySelectorAll(".navbar a").forEach(link => {
+        link.addEventListener("click", function (event) {
+            const targetId = this.getAttribute("href").substring(1); // Remove '#'
 
-</head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Siri<span>Varshini</span></a>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="education.html">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="assets/Siri_Varshini_Resume (1).pdf" download="Siri_Varshini_Resume (1).pdf">Resume</a>
-        </nav>
-        <a href="#contact" class="contact">Contact Me</a>
-    </header>
+            if (targetId === "" || targetId === "resume") {
+                return; // Allow default behavior for external links (Resume)
+            }
 
-    <section id="coding-profiles" class="profiles">
-        <h1>My <span>Coding Profiles</span></h1>
-        <div class="profile-links">
-            <a href="https://www.hackerrank.com/sirivarshini43" target="_blank" class="profile">HackerRank</a>
-            <a href="https://www.codechef.com/users/siri_varshini" target="_blank" class="profile">CodeChef</a>
-            <a href="https://codeforces.com/profile/siri_varshini" target="_blank" class="profile">Codeforces</a>
-            <a href="https://www.interviewbit.com/profile/siri-varshini_903/" target="_blank" class="profile">InterviewBit</a>
-            <a href="https://leetcode.com/u/siri_varshini43/" target="_blank" class="profile">LeetCode</a>
-        </div>
-    </section>
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                event.preventDefault();
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
 
-    <section id="certifications" class="certificates">
-        <h1>My <span>Certifications</span></h1>
-        <ul>
-            <li>
-                ICCCE-2024 Pre-Conference <b>Sustainability and Innovation</b>
-                <a href="DocScanner 13-Nov-2024 11-15 pm.pdf" download ="DocScanner 13-Nov-2024 11-15 pm.pdf" target="_blank" class="view-btn">View Certificate</a>
-            </li>
-            <li>
-                Elite Certificate in Problem Solving Through C - <b>NPTEL</b>
-                <a href="Problem Solving Through Programming In C.pdf" download ="Problem Solving Through Programming In C.pdf" target="_blank" class="view-btn">View Certificate</a>
-            </li>
-            <li>
-                Completed C for Beginners - <b>Great Learning</b>
-                <a href="Mandlem Siri varshini.pdf" download ="Mandlem Siri varshini.pdf" target="_blank" class="view-btn">View Certificate</a>
-            </li>
-            <li>
-                Completed Data Structures using C - <b>Great Learning</b>
-                <a href="Mandlem Siri varshini (1).pdf" download ="Mandlem Siri varshini (1).pdf" target="_blank" class="view-btn">View Certificate</a>
-            </li>
-        </ul>
-    </section>
-    
-    <section id="education-charts" class="charts">
-        <h1>My <span>Education Overview</span></h1>
-        <div class="chart-container">
-            <canvas id="performanceChart"></canvas>
-        </div>
-    </section>
-    
-    <footer class="foot">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/mandlem-sirivarshini?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="https://t.me/+916303602577"><i class='bx bxl-telegram'></i></a>
-            <a href="https://www.instagram.com/siri_mandlem146?igsh=eHFtMGFqcmo4Ynpy"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.snapchat.com/add/siri_mandlem?share_id=15vXdE0lCKo&locale=en-IN"><i class='bx bxl-snapchat'></i></a>
-        </div>
-        <div class="list">
-            <ul class="list1">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copy-right">
-                &copy; 2024 SiriVarshini | All rights reserved
-            </p>
-        </div>
-    </footer>
-    
-    <script defer src="education.js"></script>
-</body>
-</html>
+    // Resume link behavior (open PDF in a new tab)
+    const resumeLink = document.getElementById("resume-link");
+    if (resumeLink) {
+        resumeLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.open("assets/Siri_Varshini_Resume(1).pdf", "_blank");
+        });
+    }
+
+    // Smooth scrolling for "Contact Me" button
+    const contactButton = document.querySelector(".contact");
+    const contactSection = document.getElementById("contact");
+
+    if (contactButton && contactSection) {
+        contactButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            contactSection.scrollIntoView({ behavior: "smooth" });
+        });
+    }
+});
