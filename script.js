@@ -1,14 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scrolling for all navbar links except Resume
     document.querySelectorAll(".navbar a").forEach(link => {
         link.addEventListener("click", function (event) {
-            const targetId = this.getAttribute("href").substring(1); // Remove '#'
+            const targetId = this.getAttribute("href");
 
-            if (targetId === "" || targetId === "resume") {
-                return; // Allow default behavior for external links (Resume)
+            // If the link is an external page (e.g., education.html), allow normal navigation
+            if (!targetId.startsWith("#")) {
+                return; 
             }
 
-            const targetElement = document.getElementById(targetId);
+            // Internal page scrolling for #id links
+            const targetElement = document.getElementById(targetId.substring(1));
             if (targetElement) {
                 event.preventDefault();
                 targetElement.scrollIntoView({ behavior: "smooth" });
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (resumeLink) {
         resumeLink.addEventListener("click", function (event) {
             event.preventDefault();
-            window.open("assets/Siri_Varshini_Resume(1).pdf", "_blank");
+            window.open("documents/Siri_Varshini_Resume(1).pdf", "_blank");
         });
     }
 
