@@ -3,118 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>My Professional Portfolio</title>
+    <!-- Google Fonts for a clean, professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="header">
-        <a href="#" class="logo">Siri<span>Varshini</span></a>
-        <nav class="navbar">
+    <!-- Header -->
+    <header>
+        <a href="#home" class="logo">Siri<span style="color: #d88ae6;">Varshini</span></a>
+        <nav>
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="education.html">Education</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="documents/Siri_Varshini_Resume (1).pdf" target="_blank">Resume</a>  
+            <a href="#contact">Contact</a>
         </nav>
-        <a href="#contact" class="contact">Contact Me</a>
     </header>
 
-    <section id="home" class="home">
+    <!-- Home Section -->
+    <section id="home" class="container">
         <div class="home-content">
-            <div class="content">
-                <h3>Hi</h3>
-                <h1>I'm Mandlem Siri Varshini</h1>
-                <h2>Welcome to</h2>
-                <h2>My <span>PORTFOLIO</span></h2>
+            <div class="home-image fade-in">
+                <!-- Replace with your professional headshot -->
+                <img src="portfolio/pic.jpg" alt="My Photo">
             </div>
-            <div class="image-container">
-                <img src="portfolio/pic2.gif" alt="Photo" class="image">
+            <div class="home-text">
+                <h1 class="fade-in">
+                    Hi, Iam <span>MANDLEM SIRI VARSHINI</span>
+                </h1>
+                <h2 class="typed-text fade-in"></h2>
             </div>
         </div>
     </section>
-    
-    <section id="about" class="about">
+
+    <!-- About Section -->
+    <section id="about" class="container">
         <div class="about-content">
-            <div class="image1">
-                <img src="portfolio/pic.jpg" alt="Photo" height="500px">
+            <h2 class="section-heading fade-in">About Me</h2>
+            <!-- Recruiter Tip: Use strong, action-oriented verbs here to describe your experience. -->
+            <p class="fade-in">
+               I'm currently a pre-final year student at G. Narayanamma Institute of Technology and Science (for Women), Hyderabad, pursuing a degree in Information Technology.
+
+                I'm passionate about exploring new technologies and constantly expanding my skill set. I have a strong interest in Full Stack Development and Artificial Intelligence, and have already built several full stack projects. I'm also actively working on AI-based projects to deepen my knowledge in the field.
+
+                Want to see what I’ve built? Check out my portfolio below!
+            </p>
+            <div class="about-buttons fade-in">
+                <!-- Recruiter Tip: Link to a separate, detailed "More About Me" page or combine your education and professional summary here. -->
+                <a href="education.html" class="btn">More about me</a>
+                <a href="https://drive.google.com/file/d/1so6M41ehVx8HkmjRNszDlTRNzLcFhcTX/view?usp=drivesdk
+" class="btn" target="_blank">Resume</a>
             </div>
-            <div class="content1">
-                <h1>About <span>Me</span></h1>
-                <p>
-                    Hi, this is M. Siri Varshini.<br>
-                    I am currently pursuing B.Tech Second Year at G.Narayanamma Institute of Technology and Science for Women, specializing in Information Technology. 
-                    I have a strong interest in coding and know several programming languages, including Java,Python,C,Data structures,SQL,HTML,CSS.
-                </p>
-                <div class="myclass">
-                    <a href="education.html">More about me</a>
-                    <a href="documents/Siri_Varshini_Resume (1).pdf" target="_blank">Resume</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <div class="skills-content">
+            <h2 class="section-heading fade-in">My Skills</h2>
+            <!-- Recruiter Tip: Group your skills logically (e.g., Languages, Frameworks, Tools) to make them easier to scan. -->
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-code"></i>
+                    <h3>C</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-cubes"></i>
+                    <h3>Data Structures</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-server"></i>
+                    <h3>Oracle</h3>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="projects" class="project">
-        <div class="myproject">
-            <h1><span>MY</span> Projects</h1>
-        </div>
-        <div class="outer">
-            <div class="project1">
-                <a href="documents/calculator.py"><img src="portfolio/calci.png" alt="calculator" height="200"></a>
-                <h4>Calculator Using Python</h4>
-            </div>
-            <div class="project2">
-                <a href="portfolio/index.html" target="_blank"><img src="portfolio/port.png" alt="my portfolio" height="200"></a>
-                <h4>My Portfolio Using HTML,CSS & JS</h4>
-            </div>
-            <div class="project3">
-                <a href="documents/dbms_casestudy.pdf" target="_blank"><img src="portfolio/traffic.jpg" alt="traffic management system" height="200"></a>
-                <h4>Traffic Management System Using SQL</h4>
-            </div>
-            <div class="project4">
-                <a href="#" target="_blank"><img src="portfolio/traffic.jpg" alt="Tyre Maintanance for accident prevention(IOT)" height="200"></a>
-                <h4>This is an IOT based project that measures different parameters such as pressure,temperature,thread depth,load and notifies user if any abnormal conditions are noticed.</h4>
-            </div>
-            <div class="project5">
-                <a href="https://siri-varshini-43.github.io/stock_project/" target="_blank"><img src="portfolio/traffic.jpg" alt="Stock Management System" height="200"></a>
-                <h4>This project is mainly designed to reduce problems faced by small stores and supermarkets.</h4>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <div class="projects-content">
+            <h2 class="section-heading fade-in">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card fade-in">
+                    <!-- Recruiter Tip: Use an image of your project in action. Don't use a placeholder. -->
+                    <img src="portfolio/tire-pressure-check.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Tyre Maintanance</h3>
+                        <!-- Recruiter Tip: Focus on results. What problem did this project solve? What were the key technologies? -->
+                        <p>This is an IOT based project that measures different parameters such as pressure,temperature,thread depth,load and notifies user if any abnormal conditions are noticed.</p>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1oQHk1PJR5hsv6KX-aurE3H1SEk9DsJwX/view?usp=drivesdk" target="_blank">Live Demo</a>
+                            <a href="https://github.com/Siri-varshini-43/tyre_project" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="project-card fade-in">
+                    <img src="portfolio/stock_management.jpg" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Stock Management</h3>
+                        <p>Stock management project mainly designed to reduce problems faced by small stores and supermarkets.</p>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1sjje-Fjw3ispGv1ge2nDtXRxvObHdfsy/view?usp=drivesdk
+" target="_blank">Live Demo</a>
+                            <a href="https://siri-varshini-43.github.io/stock_project/" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card fade-in">
+                    <img src="portfolio/port.png" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Project Three Title</h3>
+                        <p>Personal Portfolio Using HTML,CSS & JS. Where you can know more about my projects, skills etc.</p>
+                        <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="https://siri-varshini-43.github.io/personal_portfolio/" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="contact" class="contact1">
-        <form action="#">
-            <h2>Contact <span>ME</span></h2>
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="E-mail">
-            <input type="number" placeholder="Mobile Number">
-            <textarea placeholder="Send message" rows="10"></textarea>
-            <button class="bt-10">Submit</button>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-heading fade-in" style="margin-left: 500px; width: 50%;">Contact Me</h2>
+        <form class="contact-form fade-in">
+            <h2>Let's connect</h2>
+            <div class="input-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <footer class="foot">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/mandlem-sirivarshini?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="https://t.me/+916303602577"><i class='bx bxl-telegram'></i></a>
-            <a href="https://www.instagram.com/siri_mandlem146?igsh=eHFtMGFqcmo4Ynpy"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.snapchat.com/add/siri_mandlem?share_id=15vXdE0lCKo&locale=en-IN"><i class='bx bxl-snapchat'></i></a>
-        </div>
-        <div class="list">
-            <ul class="list1">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copy-right">
-                &copy; 2024 SiriVarshini | All rights reserved
-            </p>
-        </div>
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <!-- Professional and social media links -->
+            <a href="https://www.linkedin.com/in/mandlem-sirivarshini?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in fade-in"></i></a>
+            <a href="https://github.com/Siri-varshini-43" target="_blank"><i class="fab fa-github fade-in"></i></a>
+            <a href="https://www.instagram.com/siri_mandlem146?igsh=eHFtMGFqcmo4Ynpy" target="_blank"><i class="fab fa-instagram fade-in"></i></a>
+            <a href="https://www.snapchat.com/add/siri_mandlem?share_id=15vXdE0lCKo&locale=en-IN" target="_blank"><i class="fab fa-snapchat-ghost fade-in"></i></a>
+            <a href="https://t.me/+916303602577"target="_blank" ><i class="fab fa-telegram-plane fade-in"></i></a>
+        </div><br>
+        <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#about">About Me</a>
+        </div><br>
+        <p>&copy; 2024 SiriVarshini | All rights reserved</p>
     </footer>
-
-    <script defer src="script.js"></script>
-
+<script src="script.js"></script>
+   
 </body>
 </html>
