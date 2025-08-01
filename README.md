@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 
 ## 🚀 Live Demo
 
-You can view the live version of the portfolio here: [https://siri-varshini-43.github.io/personal_portfolio/](https://siri-varshini-43.github.io/personal_portfolio/)
+You can view the live version of the portfolio here: [Preview](https://siri-varshini-43.github.io/personal_portfolio/)
 
 ## 🛠️ Technologies Used
 
