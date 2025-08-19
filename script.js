@@ -1,7 +1,7 @@
 
         document.addEventListener("DOMContentLoaded", function() {
             // Typing Animation for the Home section
-            const textToType = ["A Full Stack Developer", "A Web Designer"];
+            const textToType = ["A Full Stack Developer", "A Software Engineer", "A Web Designer"];
             let charIndex = 0;
             let textIndex = 0;
             const typedTextElement = document.querySelector('.typed-text');
@@ -92,3 +92,4 @@
             });
         });
    
+
