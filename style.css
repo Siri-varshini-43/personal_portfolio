@@ -544,3 +544,158 @@
         .footer-links a:hover {
             color: var(--accent-color);
         }
+/* Extra Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }
+
+    header {
+        padding: 1rem 3%;
+    }
+
+    /* Home Section */
+    .home-content {
+        padding: 1rem;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack projects vertically */
+        gap: 1.5rem;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    /* Contact */
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .social-links a {
+        margin: 0 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .footer-links a {
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Even smaller devices (like iPhone SE) */
+    .home-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .home-content h2 {
+        font-size: 1rem;
+    }
+
+    nav a {
+        margin-left: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+}
+/* Responsive: Skills Grid */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Always 2 per row */
+        gap: 1rem;
+    }
+
+    /* Navbar hamburger setup */
+    nav {
+        display: none; /* Hide nav by default on small screens */
+        flex-direction: column;
+        background-color: rgba(13, 13, 13, 0.95);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav a {
+        margin: 0.8rem 0;
+        font-size: 1rem;
+    }
+
+    /* Hamburger icon */
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        color: var(--text-color);
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1100; /* keep it above nav */
+    }
+
+}
+
+/* Desktop view - show normal nav */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        color: var(--text-color);
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1100;
+    }
+}
