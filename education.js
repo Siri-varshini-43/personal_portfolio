@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
             const performanceChart = new Chart(ctx, {
                 type: "line",
                 data: {
-                    labels: ["Sem 1", "Sem 2", "Sem 3", "Sem 4"],  // X-axis labels
+                    labels: ["Sem 1", "Sem 2", "Sem 3", "Sem 4", "Sem 5"],  // X-axis labels
                     datasets: [{
                         label: "CGPA",
-                        data: [9.88,9.55,9.70,8.80],  // Replace with actual CGPA values
+                        data: [9.88,9.55,9.70,8.80,9.2],  // Replace with actual CGPA values
                         borderColor: "#d88ae6",
                         backgroundColor: "rgba(220, 169, 229, 0.3)",
                         pointBackgroundColor: "#d88ae6",
@@ -78,3 +78,4 @@ document.addEventListener("DOMContentLoaded", function() {
                 observer.observe(element);
             });
         });
+
